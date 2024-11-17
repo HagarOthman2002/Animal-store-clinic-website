@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+header{
+    background-color:lavender;
+    width:100%;
+    position:fixed;/*position of the header bar sabt w msh by5tfy lma b3ml scroll */
+    z-index: 999;/* by5ly al header zaher fo2 wna b scroll fmfesh 7aga bt8ty 3leh*/
+    display: flex;
+    justify-content: space-between;/*makes space between anchor(logo)link & navigation links */
+    align-items: center;/*centering elements vertically*/
+    padding: 10px 200px;/*(padding short hand awl value top&bottom tany value R&L)by7ot msa7a*/
+}
+
+/*logo styling*/
+.logo{
+    text-decoration: none; /*byshel al 5at ely ta7t al klam*/
+    color: blue;
+    text-transform: uppercase;
+    font-weight:700;/*btt5n al 7rof*/
+    font-size:1.8em;/*(em) bt5ly ay size relative to default size ely mt7dd fe al body*/
+/*1.8em *16 =---pixel*/
+}
+.navigation a{ 
+    text-decoration: none;
+    color: blue;
+    font-size: 1.1em;
+    font-weight:700;
+    padding-left: 30px;
+}
+.navigation a:hover{  
+    color: #601c60;
+
+}
+.section{
+    padding: 100px 200px; /*awl value top & button w al tanya right & left*/
+
+}
+.main{
+    width: 100%;
+    min-height: 100vh;/*vh:view board*/
+    display: flex;
+    align-items: center; /*mynf3sh a3mlha abl m3ml display flix*/
+    background-image: url(images/dog.png);
+    background-size: cover; /*to scale down the cover*/
+    background-position: center;
+    /*background-attachment: fixed;*/
+}
+.main h2{
+    color:blue;
+    font-size:1.4em;
+    font-weight: 700;
+
+}
+.main h2 span{  /*span is inline elemnt so we can't apply margin on it*/
+    display: inline-block;/*to apply margin*/
+    margin-top:0px;
+    color:rgb(1, 25, 26);
+    font-size: 3;
+    font-weight: 600;
+}
+.main h3{
+    color:rgb(1, 24, 24);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-btn{/*anchor tag also inline element*/
+    color:aliceblue;
+    background-color:rgb(118, 118, 202);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.7375em;
+    letter-spacing: 1px;
+    border-radius: 15px; /*shkl al curve fe al button*/
+    margin-bottom: 40px;
+    transition: 0.1s ease;
+
+}
+
+.main-btn:hover{
+    background-color: blue;
+    transform: scale(1.1);/*1.1 3la al x&y axis*/
+}
+.social-icons{
+    color: black;
+    font-size: 1.7em;
+    padding-right:30px;
+}
+/*css for cards*/
+.title{   /*(services)*/
+    display: flex;
+    justify-content: center; /*align vertically ,justify content horizontly*/ 
+   color: blue;
+   font-size: 2.2em;
+   font-weight: 800;
+   margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;/*lw mdtlosh al line da hy3tbr al value no wrap lw mfesh msa7a l card gdida hy7otha f line gded*/
+    
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 50%);/*mfesh shadow fo2 w t7t fe shadow ymen 5px blurt 25px  a=opasity */
+    border-radius: 10px;
+    padding: 25px; /*padding by3ml msa7a gwa al elements */
+    margin: 15px;/*margin by3ml msa7a 7walen al elements */
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+   
+}
+.icon{
+    color: blue;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+   
+}
+.contact .info h3{
+    color: black
+}
+.contact .info p{
+    font-size: 1.5em;
+}

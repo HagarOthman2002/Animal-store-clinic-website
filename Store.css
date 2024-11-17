@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+}
+body{
+    background-image: src ("images/pet.png");
+    background-size: cover;
+}
+header{
+    background-color:lavender;
+    width:100%;
+    position:fixed;/*position of the header bar sabt w msh by5tfy lma b3ml scroll */
+    z-index: 999;/* by5ly al header zaher fo2 wna b scroll fmfesh 7aga bt8ty 3leh*/
+    display: flex;
+    justify-content: space-between;/*makes space between anchor(logo)link & navigation links */
+    align-items: center;/*centering elements vertically*/
+    padding: 10px 200px;/*(padding short hand awl value top&bottom tany value R&L)by7ot msa7a*/
+}
+
+.signup{
+    width: 300PX;
+    padding: 10px 5px;
+    margin: 50px auto;
+    background-color:lavender;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.blue-color {
+    color:blue;
+}
+
+.buy{
+    font-size: larger;
+    margin-top: 0.3cm;
+    padding: 10px 0px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    float:right;
+    width: 50%;
+    cursor: pointer;
+    background-color:darkgrey ;
+}
+
+
+.product{
+    
+    width:350px;
+    padding: 10px;
+    margin: 50px auto;
+    
+    background-color:lavender;
+    
+    border-radius:10px;
+    
+    float:left;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    
+
+}
+.icon{
+    width: 50px;
+    padding: 15px;
+    margin: auto auto;
+    
+    background-color:lavender;
+    
+    border-radius:10px;
+    
+    float:right;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+h1{
+    font-size: 40px;
+    color: rgb(17, 0, 255);
+    margin:10px;
+}
+form input{
+    width: 90%;
+    outline: none;
+    border: 1px solid white;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: whitesmoke;
+    
+}
+button{
+    font-size: larger;
+    margin-top: 0.3cm;
+    padding: 10px 0px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    cursor: pointer;
+    background-color:darkgrey ;
+}
+.testo{
+    font-size: larger;
+    margin-top: 0.3cm;
+    padding: 10px 0px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    cursor: pointer;
+    background-color:darkgrey ;
+}
+button:hover{
+    background-color:rgb(17, 0, 255);
+}
+.testo:hover{
+    background-color: rgb(17, 0, 255);
+}
+input:focus{
+    border: 1px solid darkgrey;
+}
+.alreadyamember a{
+    color: darkslategrey;
+    text-decoration: underline;
+}
+.alreadyamember{
+    margin-top: 0.3cm;
+}
